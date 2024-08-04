@@ -3,9 +3,9 @@
 module.exports = {
     PORT: process.env.PORT || 3300,
     HOST: process.env.DB || '127.0.0.1',
-    DB: 'Clases',
+    DB: 'clasessap',
     USER: 'root',
-    PASSWORD: '',
+    PASSWORD: 'Melisazavala88@',
     DIALECT: 'mysql',
     POOL_MAX: 5,
     POOL_MIN: 0,

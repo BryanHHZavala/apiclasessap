@@ -48,4 +48,6 @@ const filtro_docente = async (req, res) => {
     }
 }
 
+
 module.exports = { filtro_docente };
+

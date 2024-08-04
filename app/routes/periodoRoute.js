@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const periodoController = require('../controllers/periodoController');
+const {periodos, obtenerPeriodos} = require('../controllers/periodoController');
 
 // Define la ruta que utiliza el controlador
-router.post('/periodos', periodoController.periodos);
+router.post('/periodos', periodos);
+router.get('/getPeriodo', obtenerPeriodos);
 
 module.exports = router;

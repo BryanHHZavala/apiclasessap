@@ -14,10 +14,13 @@ const clases = require('./routes/clasesRoute');
 const detalle_periodo = require('./routes/detalle_periodoRoute');
 const periodo = require('./routes/periodoRoute');
 const clase_docente = require('./routes/clases_docenteRoute');
+const catedraticos = require('./routes/catedraticosRoute');
+
 
 App.use('/api', clases);
 App.use('/api', detalle_periodo);
 App.use('/api', periodo);
 App.use('/api', clase_docente);
+App.use('/api', catedraticos);
 
 module.exports = App;
