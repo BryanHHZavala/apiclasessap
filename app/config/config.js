@@ -2,11 +2,11 @@
 require("dotenv").config();
 
 module.exports = {
-    PORT: process.env.DBPORT || 3300,
+    PORT: process.env.DB_PORT || 3300,
     HOST: process.env.DB_HOST || '127.0.0.1',
-    DB: DB_NAME,
-    USER: DB_USER,
-    PASSWORD: DB_PASSWORD,
+    DB: process.env.DB_NAME,
+    USER: process.env.DB_USER,
+    PASSWORD: process.env.DB_PASSWORD,
     DIALECT: 'mysql',
     POOL_MAX: 5,
     POOL_MIN: 0,
