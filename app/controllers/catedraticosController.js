@@ -1,17 +1,15 @@
-// controllers/catedraticosController.js
-const db = require('../config/db.js');
+const db = require('../config/db');
 
 const mostrarCatedraticos = async (req, res) => {
-    const query = 'SELECT id_catedratico, nombre_catedratico FROM catedraticos';
-
+    const query = 'SELECT id_catedratico, nombre_catedratico FROM catedraticos ORDER BY nombre_catedratico ASC';
     try {
-        const [rows] = await db.query(query);
-        res.json(rows);
+        const [results] = await db.query(query);
+        res.json(results);
     } catch (error) {
-        console.error("Error al obtener los catedráticos:", error);
         res.status(500).json({ error: 'Error al obtener los catedráticos' });
     }
 };
+
 
 module.exports = {
     mostrarCatedraticos
