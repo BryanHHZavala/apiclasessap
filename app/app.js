@@ -12,6 +12,8 @@ App.use(express.urlencoded({ extended: false }));
 
 App.use(bodyParser.json())
 
+
+//probando git
 //Declaro las rutas
 const clases = require('./routes/clasesRoute');
 const detalle_periodo = require('./routes/detalle_periodoRoute');
